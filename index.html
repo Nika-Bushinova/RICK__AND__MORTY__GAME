@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>-->
+    <script src="https://unpkg.com/matter-js@0.14.2/build/matter.min.js"></script>
+
+
+
+
+    <title>RICK AND MORTY</title>
+</head>
+
+<body>
+
+    
+
+   
+    <div class="wrapper" id="wrapper">
+        <div class="wrapper__wrapper">
+            <header class="header">
+
+                <div class="header__container _container">
+                    <div class="header__logo link fab fa-digital-ocean fa-spin">
+                        <span><img src="img/logo.png" alt="logo"></span>
+                    </div>
+
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <div class="header__empty _container"></div>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="index.html" class="menu__link menu__link_bold" title="home"
+                                    data-goto=".main-block _container">HOME</a></li>
+                            <li class="menu__item"><a href="services.html" class="menu__link" title="contact"
+                                    data-goto=".main-block__explore-city">ABOUT THE GAME</a></li>
+                            <li class="menu__item"><a href="e-gov.html" class="menu__link" title="news"
+                                    data-goto=".main-block__government">MEDIA</a></li>
+                            <li class="menu__item"><a href="department.html" class="menu__link" title="events"
+                                    data-goto=".main-block__amazing-spotlight">NEWS</a></li>
+                            <li class="menu__item"><a href="about.html" class="menu__link" title="about this website"
+                                    data-goto=".info-item _container">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="main">
+                <div id="canvas1"></div>
+                <div class="main__img">
+                    <img src="img/portal.png" alt="portal" class="main__portal">
+
+                    <div class="main__img-img">
+
+                        <div class="main__score" id="score">
+
+                             <div id="numberColumn">Number</div>
+                            <div id="nameColumn">Name</div>
+                            <div id="scoreColumn">Result</div>
+
+                        </div>
+
+                        <img src="img/bgMain.png" alt="Rick and Morty game">
+                        <div class="main__button-score_div">
+                        <button type="submit" class="main__button-score" id="button-score" onclick="scoreF()">High
+                            Score Record</button></div>
+                        <div class="main__text">
+                                   <form name="MyForm" id="form" novalidate>
+                                <label for="name">Name</label>
+                                <input type="text" id="nameID" class="nickname" name="name">
+                            </form>
+                            <div class="main__button button" id="button">
+                                <button class="button__item first-button" id="game_button"
+                                     ><span>Game</span></button>
+                            </div>
+                            <pre id="output"></pre>
+                        </div>
+
+                </div>
+                <div id="canvas2"></div>
+            </main>
+        </div>
+    </div>
+
+    <div id="wrapper__game" >
+        <div id="gameover-screen" class="screen">
+            <h1>Game over</h1>
+            <h1 id="gameScore"></h1>
+            <button id="game__over">Play again</button>
+        </div>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="index.js"></script>
+    <script src="game.js"></script>
+    <script src="functions.js"></script>
+    <script src="render.js"></script>
+    <script src="ajax.js"></script>
+
+
+</body>
+
+</html>

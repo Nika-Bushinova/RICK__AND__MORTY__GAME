@@ -1,0 +1,357 @@
+/*--------------обнуление-------------*/
+
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:active {
+   outline: none
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   font-family: 'Mulish', sans-serif;
+}
+
+body {
+   margin: 0px
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none !important;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 700;
+   margin: 0px
+}
+
+
+/*-----------общие параметры страницы----------*/
+
+*,
+:after,
+:before {
+   box-sizing: border-box;
+}
+
+.index1 {
+}
+
+.wrapper {background: url(img/bg2.png);
+   background-size: cover;
+   margin: 0px;
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   background-position: bottom;
+   display: flex;
+   flex-direction: column;
+   z-index: 0;
+}
+
+._container {
+   max-width: 1440px;
+   margin: 0px auto;
+   align-items: center;
+}
+
+
+/*------------------------------------header-----------------------*/
+
+.header__logo img{
+   width:95%;
+}
+
+.header__container {
+   height:50px;
+   display: flex;
+   flex-wrap: nowrap;
+   font-size: 16px;
+   color: #0A2647;
+   }
+
+.header__logo {
+   margin-left: 15%;
+   width:150px;
+   padding: 5px 0px 5px 0px;
+   font-size: 18px;
+}
+
+.header__logo span:first-child {
+   font-weight: 900;
+}
+
+.header__menu {
+   margin: 0 7%;
+   align-items: center;
+   max-width: 100%;
+}
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0px;
+}
+
+.menu__item:not(:last-child) {
+   margin-right: 50px;
+}
+
+.menu__item {
+   transition: 1s;
+   padding-top:10px
+}
+
+.menu__item:hover {
+   transform: scale(1.2);
+}
+
+.menu__link {
+   color: #0A2647;
+   font-weight: 400
+}
+
+.menu__link_bold {
+   /*модификатор*/
+   font-weight: 700
+}
+
+
+.header__burger,
+.header__empty {
+   display: none
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.main__img{
+   margin-top:15px;
+   text-align:center;
+   position: relative;
+   
+}
+@keyframes A {
+   from {transform:translateZ(0);will-change: transform;
+      transform: rotate(0deg);
+    }
+    to {transform:translateZ(0); will-change: transform;
+      transform: rotateZ(360deg);
+    }
+   
+}
+.main__portal{
+width:30%;
+   animation: A 10s linear 0s infinite;
+}
+.main__button{
+   margin-top:2%;
+}
+
+.first-button {
+   background:url(img/cucumber.png) 100% 38% / 100% auto no-repeat;
+   box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+   border-radius: 100px;
+   font-weight: 800;
+   color: rgb(101, 67, 33);
+   border: 0px;
+   padding: 1% 23% 3% 4%;
+   font-size: 16px;
+font-size: 65px;
+   margin-bottom:1%;
+
+   text-shadow:1px 2px 0 black;
+transition-duration:2s
+}
+
+.first-button:hover {
+   cursor: auto;
+   box-shadow: 0 0 100px 0 #0A2647 inset, 0 0 10px 4px rgba(35, 193, 204);
+}
+.first-button:active {
+   box-shadow: 0 0 10px 0 #D61F00 inset, 0 0 30px 10px rgba(35, 193, 204);
+   padding-top:8px
+}
+
+
+.main__img-img{
+   padding-top:30px;
+position: absolute;
+left:33%;
+right:30%;
+top:0;
+bottom:0;
+
+
+}
+.main__score{
+   position:absolute;
+   width:95%;
+   height:70%;
+   background-color: #7FFF00;
+   border:10px solid rgb(101, 67, 33);
+   border-radius:50px;
+   transition: all 2s ease-in-out;
+   transform: translateY(-150%);
+}
+
+
+.main__button-score{
+   font-weight: 800;
+   padding:20px;
+   border-radius: 100px;
+   background-color:	#7FFF00;
+   opacity:0.8;
+   font-size: 200%;
+   color: rgb(101, 67, 33);
+   text-shadow:1px 2px 0 black
+}
+
+.main__img-img img{
+   width:80%;
+height:80%;
+object-fit: cover;
+margin-bottom:3%;
+margin-right:13%
+}
+.main__text,.main__button-score_div{
+   margin-left:25px
+}
+.main__img-img label{
+
+   font-size: 20px;
+   font-weight: 800;
+   color: brown;
+   border: 0px;
+   font-size: 16px;
+font-size: 45px;
+text-shadow:1px 2px 0 black
+}
+.main__img-img input{
+   font-size: 18px;
+   padding:0px 20px;
+   height:70px;
+   width:40%;
+   border-radius: 100px;
+   margin:2% 3%;
+   background-color:	#7FFF00;
+   opacity:0.8;
+}
+
+#mycanvas1  {
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:2;
+}
+#mycanvas2{
+   position:absolute;
+   top:0;
+   left:70%;
+   z-index:2;
+}
+/*---------------------------------------------------------------game------------------------------------*/
+
+#wrapper__game{
+   display:none;
+}
+
+#canvas__game { position:absolute;
+   top:0;
+   left:0;
+
+   width: 100vw;
+   height: 100vh;}
+
+#gameover-screen{
+   position: absolute;
+    font-size:1000%;
+    top: 20%;
+    left:15%;
+    text-align: center;
+    color:#78eafa;
+
+}
+#gameover-screen button{
+   border:3px solid #bd78fa;
+   padding:5px;
+   border-radius: 10px;
+   font-size: 60%;
+ 
+}
+
+/*---------------------------------------------*/
+.main__score{
+   padding:20%;
+   display:flex;
+   justify-content:space-between
+}
+#score{
+   font-size:200%
+}
